@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className='absolute top-0  inset-x-0 py-3 px-6 flex justify-center' style={poppins.style}>
       <div className='my-auto flex gap-x-8 text-white'>
         <Link
-          href='#'
+          href='/'
           className={`hover:text-[#B8C1B2] hover:transition-all ${
             pathname === '/' ? 'text-[#B8C1B2] underline underline-offset-4' : 'text-white'
           }`}
@@ -26,14 +26,14 @@ export default function Navbar() {
           Home
         </Link>
         <Link
-          href='#'
+          href='/products'
           className={`hover:text-[#B8C1B2] hover:transition-all ${
             pathname === '/products' ? 'text-[#B8C1B2] underline underline-offset-4' : 'text-white'
           }`}
         >
           Products
         </Link>
-        <Link href='#testimonials' className={`hover:text-[#B8C1B2] hover:transition-all`}>
+        <Link href='/#testimonials' className={`hover:text-[#B8C1B2] hover:transition-all`}>
           Testimonials
         </Link>
         <Link

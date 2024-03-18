@@ -18,13 +18,13 @@ const poppins = Poppins({
 export default function Footer() {
   return (
     <footer className='py-4 flex justify-around text-white bg-[#424242]' style={poppins.style}>
-      <Link href='/' className='text-center'>
+      <Link href='/' className='my-auto text-center'>
         <p className='text-xl italic' style={bilboSwashCaps.style}>
           Pt Saputra Tenda Sejahtera
         </p>
         <p className='text-[6px]'>Konveksi pembuat dekorasi tenda, hotel, dan kantor.</p>
       </Link>
-      <div className='my-auto flex gap-x-8'>
+      <div className='my-auto text-sm flex gap-x-8'>
         <Link href='#'>About Us</Link>
         <Link href='#'>Terms of Service</Link>
         <Link href='#'>Privacy Policy</Link>
