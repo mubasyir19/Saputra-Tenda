@@ -30,13 +30,16 @@ export default function Footer() {
         <Link href='#'>Privacy Policy</Link>
         <Link href='#'>FAQ</Link>
       </div>
-      <div className='flex gap-x-4'>
-        <Link href='#' className='cursor-pointer'>
-          <Image src='/images/tokopedia.png' height={25} width={24} alt='tokopedia' className='' />
-        </Link>
-        <Link href='#' className='cursor-pointer'>
-          <Image src='/images/shopee.png' height={25} width={24} alt='tokopedia' className='' />
-        </Link>
+      <div className='my-auto text-center'>
+        <p className='text-xs'>Our Online Store :</p>
+        <div className='flex justify-center gap-x-4'>
+          <Link href='#' className='cursor-pointer'>
+            <Image src='/images/tokopedia.png' height={25} width={24} alt='tokopedia' className='' />
+          </Link>
+          <Link href='#' className='cursor-pointer'>
+            <Image src='/images/shopee.png' height={25} width={24} alt='tokopedia' className='' />
+          </Link>
+        </div>
       </div>
     </footer>
   );
