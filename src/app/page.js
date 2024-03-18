@@ -158,7 +158,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='w-full py-12 bg-[#585B56]' style={poppins.style}>
+      <section id='testimonials' className='w-full py-12 bg-[#585B56]' style={poppins.style}>
         <div className='text-white text-center'>
           <h3 className='text-3xl font-semibold' style={yesevaOne.style}>
             Testimonials
