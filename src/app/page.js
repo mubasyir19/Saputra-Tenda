@@ -1,4 +1,5 @@
 import Chat from '@/components/Chat';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Bilbo_Swash_Caps, Poppins, Yeseva_One } from 'next/font/google';
 import Image from 'next/image';
@@ -199,6 +200,7 @@ export default function Home() {
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
       </section>
+      <Footer />
     </main>
   );
 }
