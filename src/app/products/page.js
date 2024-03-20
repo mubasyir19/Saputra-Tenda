@@ -30,11 +30,14 @@ export default function Products() {
       >
         <Navbar />
         <div className='h-full flex justify-center items-center text-center' style={yesevaOne.style}>
-          <h3 className='text-3xl'>Our Products</h3>
+          <h3 className='text-3xl underline underline-offset-4'>Our Products</h3>
         </div>
       </header>
       <section className='container mx-auto my-10 flex gap-x-8' style={poppins.style}>
         <div className='w-64 h-fit px-2 py-4 flex-col text-sm bg-white drop-shadow-lg rounded-xl overflow-hidden'>
+          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+            Semua Produk
+          </button>
           <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
             Sarung Kursi
           </button>
