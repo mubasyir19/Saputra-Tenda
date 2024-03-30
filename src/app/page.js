@@ -35,25 +35,25 @@ export default function Home() {
         }}
       >
         <Navbar />
-        <section className='h-screen flex justify-center items-center text-center'>
+        <section className='h-screen px-8 flex justify-center items-center text-center'>
           <div>
-            <h1 className='text-8xl italic' style={bilboSwashCaps.style}>
+            <h1 className='text-6xl md:text-6xl lg:text-7xl xl:text-8xl italic' style={bilboSwashCaps.style}>
               Pt Saputra Tenda Sejahtera
             </h1>
-            <p className='mt-6 text-xl' style={poppins.style}>
+            <p className='mt-6 text-sm md:text-base lg:text-xl' style={poppins.style}>
               Konveksi pembuat perlengkapan kain untuk dekorasi tenda, hotel, dan kantor.
             </p>
           </div>
         </section>
       </header>
-      <section className='my-20 flex justify-center gap-x-11' style={poppins.style}>
+      <section className='my-20 px-5 md:block lg:flex justify-center gap-x-11' style={poppins.style}>
         <div>
           <h3 className='text-3xl font-semibold text-[#576250]' style={yesevaOne.style}>
             Best Seller
           </h3>
           <p className='text-[#B8C1B2]'>Our best selling products</p>
         </div>
-        <div className='flex gap-x-4 text-[#90998B]'>
+        <div className='flex flex-col md:flex-row gap-4 text-[#90998B]'>
           <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
             <Image src='/images/photography.png' height={223} width={210} alt='photography' className='rounded-lg' />
             <p className='mt-4'>Rumbai Tenda</p>
@@ -75,7 +75,7 @@ export default function Home() {
           </h3>
           <p className='text-[#B8C1B2]'>Our Category Products</p>
         </div>
-        <div className='mt-6 w-fit container mx-auto grid grid-cols-4 gap-3 justify-items-center'>
+        <div className='mt-6 w-fit px-5 container mx-auto grid md:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center'>
           <div className='card-category relative '>
             <Image
               src='/images/category.png'
@@ -201,7 +201,7 @@ export default function Home() {
             referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
         </div>
-        <div className='w-full px-28 mt-12 grid grid-cols-3 gap-x-6'>
+        <div className='w-full px-5 container mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-6'>
           <div className='card-contact w-full p-4 bg-[#F0F2EF]'>
             <div className='text-center text-black'>
               <svg
