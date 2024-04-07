@@ -18,7 +18,7 @@ const poppins = Poppins({
 export default function Footer() {
   return (
     <footer
-      className='py-4 px-5 lg:px-8 flex flex-col md:flex-row justify-around text-white bg-[#424242]'
+      className='py-4 px-5 lg:px-8 flex flex-col h-fit  md:flex-row justify-around text-white bg-[#424242]'
       style={poppins.style}
     >
       <Link href='/' className='my-auto text-center'>

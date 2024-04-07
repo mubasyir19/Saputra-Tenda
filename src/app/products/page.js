@@ -1,9 +1,20 @@
+'use client';
+
 import Chat from '@/components/Chat';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Poppins, Yeseva_One } from 'next/font/google';
-import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+import CardProduct from '@/components/CardProduct';
+import {
+  SarungKursi,
+  RumbaiTenda,
+  Plafon,
+  KainPelamin,
+  BackgroundDinding,
+  CoverMeja,
+  DekorasiLengkap,
+} from '@/services/dataProduct/serve';
 
 const yesevaOne = Yeseva_One({
   weight: ['400'],
@@ -18,6 +29,16 @@ const poppins = Poppins({
 });
 
 export default function Products() {
+  const [productTab, setProductTab] = useState('AllProducts');
+
+  function loopData(product, callback) {
+    return product.map(callback);
+  }
+
+  const switchTab = (tabName) => {
+    setProductTab(tabName);
+  };
+
   return (
     <main className='relative'>
       <Chat />
@@ -33,110 +54,189 @@ export default function Products() {
           <h3 className='text-3xl underline underline-offset-4'>Our Products</h3>
         </div>
       </header>
-      <section className='container mx-auto my-10 flex gap-x-8' style={poppins.style}>
-        <div className='w-64 h-fit px-2 py-4 flex-col text-sm bg-white drop-shadow-lg rounded-xl overflow-hidden'>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+      <section className='container mx-auto px-5 my-10 block md:flex gap-x-8' style={poppins.style}>
+        <div className='w-full md:w-48 lg:w-56 xl:w-64 h-fit px-2 py-4 flex-col text-sm md:text-xs lg:text-sm bg-white drop-shadow-lg rounded-xl overflow-hidden'>
+          <button
+            onClick={() => switchTab('AllProducts')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'AllProducts'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Semua Produk
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('SarungKursi')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'SarungKursi'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Sarung Kursi
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('RumbaiTenda')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'RumbaiTenda'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Rumbai / Poni Tenda
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('Plafon')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'Plafon'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Plafon Dekorasi Tenda
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('CoverMeja')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'CoverMeja'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Cover Meja
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('KainPelamin')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'KainPelamin'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Kain Pelamin
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('BackgroundDinding')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'BackgroundDinding'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Background Dinding
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('DekorasiLengkap')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'DekorasiLengkap'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Dekorasi Tenda Lengkap
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('TerpalTenda')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'TerpalTenda'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Terpal Tenda
           </button>
-          <button className='w-full text-start py-2 px-4 rounded-md hover:bg-black hover:bg-opacity-10 hover:transition-all'>
+          <button
+            onClick={() => switchTab('KainLotto')}
+            className={`w-full text-start py-2 px-4 rounded-md ${
+              productTab === 'KainLotto'
+                ? 'bg-black bg-opacity-10 transition-all'
+                : 'hover:bg-black hover:bg-opacity-10 hover:transition-all'
+            }`}
+          >
             Kain Lotto
           </button>
         </div>
-        <div className='grid grid-cols-4 gap-4'>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
-          <div className='card-product h-fit bg-white drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={130} width={130} alt='product' className='w-full' />
-            <div className='p-2'>
-              <p className='text-xs'>table runner / runner meja</p>
-              <p className='mt-1 font-bold text-sm'>Rp50.000</p>
-            </div>
-          </div>
+        <div className='mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+          {productTab === 'AllProducts' && (
+            <>
+              {loopData(SarungKursi, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+              {loopData(RumbaiTenda, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+              {loopData(Plafon, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+              {loopData(CoverMeja, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'SarungKursi' && (
+            <>
+              {loopData(SarungKursi, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'RumbaiTenda' && (
+            <>
+              {loopData(RumbaiTenda, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'Plafon' && (
+            <>
+              {loopData(Plafon, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'CoverMeja' && (
+            <>
+              {loopData(CoverMeja, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'KainPelamin' && (
+            <>
+              {loopData(KainPelamin, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'BackgroundDinding' && (
+            <>
+              {loopData(BackgroundDinding, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'DekorasiLengkap' && (
+            <>
+              {loopData(DekorasiLengkap, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'TerpalTenda' && (
+            <>
+              {loopData(TerpalTenda, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
+          {productTab === 'KainLotto' && (
+            <>
+              {loopData(KainLotto, (item) => (
+                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              ))}
+            </>
+          )}
         </div>
       </section>
       <Footer />

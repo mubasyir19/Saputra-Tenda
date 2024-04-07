@@ -1,7 +1,11 @@
 [
   {
     "name": "pita kursi / pita kupu kupu",
-    "price": "Rp9.000"
+    "price": "Rp9.000",
+    "image": [
+      "/images/products/sarung kursi ketat dengan bordir.jpg",
+      "/images/products/sarung kursi ketat dengan bordir (tampak belakang).jpg"
+    ]
   },
   {
     "name": "Sarung kursi futura besar model ketat",
@@ -25,7 +29,11 @@
   },
   {
     "name": "Sarung kursi Napoly",
-    "price": "Rp23.000"
+    "price": "Rp23.000",
+    "image": [
+      "/images/products/tampak depan sarung kursi napolly 101.jpg",
+      "/images/products/tampak belakang sarung kursi napoly 101.jpg"
+    ]
   },
   {
     "name": "SARUNG KURSI PESTA",

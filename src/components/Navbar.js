@@ -33,7 +33,7 @@ export default function Navbar() {
         >
           Products
         </Link>
-        <Link href='/#testimonials' className={`hover:text-[#B8C1B2] hover:transition-all`}>
+        <Link href='/testimonials' className={`hover:text-[#B8C1B2] hover:transition-all`}>
           Testimonials
         </Link>
         <Link
