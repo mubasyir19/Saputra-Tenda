@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed z-0 top-0  inset-x-0 p-6 flex justify-center ${
+      className={`fixed z-10 top-0  inset-x-0 p-6 flex justify-center ${
         hasScrolled ? 'transition-all bg-black bg-opacity-70' : 'transition-all'
       }`}
       style={poppins.style}
