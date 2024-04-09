@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CardProduct({ productImage, productName, productPrice }) {
   return (
-    <div className='card-product w-full h-fit  md:w-36 lg:w-40 xl:w-56 flex flex-col bg-white drop-shadow-lg rounded-lg'>
+    <div className='card-product w-full h-fit md:w-36 lg:w-40 xl:w-56 flex flex-col bg-white drop-shadow-lg rounded-lg'>
       <Image
         src={`/images/${productImage}.png`}
         height={130}
