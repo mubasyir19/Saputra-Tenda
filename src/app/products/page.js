@@ -212,26 +212,14 @@ export default function Products() {
           {productTab === 'BackgroundDinding' && (
             <>
               {loopData(BackgroundDinding, (item, key) => (
-                <CardProduct
-                  productImag
-                  key={key}
-                  e={'photography'}
-                  productName={item.name}
-                  productPrice={item.price}
-                />
+                <CardProduct productImage={'photography'} key={key} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'DekorasiLengkap' && (
             <>
               {loopData(DekorasiLengkap, (item, key) => (
-                <CardProduct
-                  productImag
-                  key={key}
-                  e={'photography'}
-                  productName={item.name}
-                  productPrice={item.price}
-                />
+                <CardProduct productImage={'photography'} key={key} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
