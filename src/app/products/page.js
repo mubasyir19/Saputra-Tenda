@@ -54,7 +54,7 @@ export default function Products() {
           <h3 className='text-3xl underline underline-offset-4'>Our Products</h3>
         </div>
       </header>
-      <section className='container mx-auto px-5 my-10 block md:flex gap-x-8' style={poppins.style}>
+      <section className='mx-auto px-5 my-10 block md:flex md:justify-center  gap-x-8' style={poppins.style}>
         <div className='w-full md:w-48 lg:w-56 xl:w-64 h-fit px-2 py-4 flex-col text-sm md:text-xs lg:text-sm bg-white drop-shadow-lg rounded-xl overflow-hidden'>
           <button
             onClick={() => switchTab('AllProducts')}
