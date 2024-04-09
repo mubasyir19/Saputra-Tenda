@@ -160,80 +160,92 @@ export default function Products() {
         <div className='mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           {productTab === 'AllProducts' && (
             <>
-              {loopData(SarungKursi, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(SarungKursi, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
-              {loopData(RumbaiTenda, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(RumbaiTenda, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
-              {loopData(Plafon, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(Plafon, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
-              {loopData(CoverMeja, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(CoverMeja, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'SarungKursi' && (
             <>
-              {loopData(SarungKursi, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(SarungKursi, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'RumbaiTenda' && (
             <>
-              {loopData(RumbaiTenda, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(RumbaiTenda, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'Plafon' && (
             <>
-              {loopData(Plafon, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(Plafon, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'CoverMeja' && (
             <>
-              {loopData(CoverMeja, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(CoverMeja, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'KainPelamin' && (
             <>
-              {loopData(KainPelamin, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(KainPelamin, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'BackgroundDinding' && (
             <>
-              {loopData(BackgroundDinding, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(BackgroundDinding, (item, key) => (
+                <CardProduct
+                  productImag
+                  key={key}
+                  e={'photography'}
+                  productName={item.name}
+                  productPrice={item.price}
+                />
               ))}
             </>
           )}
           {productTab === 'DekorasiLengkap' && (
             <>
-              {loopData(DekorasiLengkap, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(DekorasiLengkap, (item, key) => (
+                <CardProduct
+                  productImag
+                  key={key}
+                  e={'photography'}
+                  productName={item.name}
+                  productPrice={item.price}
+                />
               ))}
             </>
           )}
           {productTab === 'TerpalTenda' && (
             <>
-              {loopData(TerpalTenda, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(TerpalTenda, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
           {productTab === 'KainLotto' && (
             <>
-              {loopData(KainLotto, (item) => (
-                <CardProduct productImage={'photography'} productName={item.name} productPrice={item.price} />
+              {loopData(KainLotto, (item, key) => (
+                <CardProduct key={key} productImage={'photography'} productName={item.name} productPrice={item.price} />
               ))}
             </>
           )}
