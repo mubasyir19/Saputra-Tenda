@@ -80,7 +80,7 @@ export default function Navbar() {
           </svg>
         </button>
         {isMenuOpen && (
-          <div className='absolute p-1 inset-0'>
+          <div className='absolute p-1 inset-0 slideIn'>
             <div className='bg-black bg-opacity-80 p-6 space-y-3 text-right'>
               <button onClick={toogleMenuOpen} className=''>
                 <svg

@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tambahkan ini pada file CSS Anda */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Tambahkan kelas untuk menerapkan animasi */
+.slideIn {
+  animation: slideIn 0.3s forwards;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
