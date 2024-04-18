@@ -27,7 +27,7 @@ export default function Footer() {
         </p>
         <p className='text-[6px]'>Konveksi pembuat dekorasi tenda, hotel, dan kantor.</p>
       </Link>
-      <div className='my-auto mx-auto text-sm text-center flex flex-col md:flex-row gap-x-8'>
+      <div className='mt-4 md:my-auto mx-auto text-sm text-center flex flex-col md:flex-row gap-x-8'>
         <Link href='#'>About Us</Link>
         <Link href='#'>Terms of Service</Link>
         <Link href='#'>Privacy Policy</Link>
