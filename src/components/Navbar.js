@@ -64,9 +64,9 @@ export default function Navbar() {
           Testimonials
         </Link>
         <Link
-          href='#'
+          href='/contact-us'
           className={`hover:text-[#B8C1B2] hover:transition-all ${
-            pathname === '/contact' ? 'text-[#B8C1B2] underline underline-offset-4' : 'text-white'
+            pathname === '/contact-us' ? 'text-[#B8C1B2] underline underline-offset-4' : 'text-white'
           }`}
         >
           Contact Us
@@ -97,16 +97,16 @@ export default function Navbar() {
                   <line x1='6' y1='6' x2='18' y2='18'></line>
                 </svg>
               </button>
-              <Link href='#' className='block text-lg text-white text-center'>
+              <Link href='/' className='block text-lg text-white text-center'>
                 Home
               </Link>
-              <Link href='#' className='block text-lg text-white text-center'>
+              <Link href='/products' className='block text-lg text-white text-center'>
                 Products
               </Link>
-              <Link href='#' className='block text-lg text-white text-center'>
+              <Link href='/testimonials' className='block text-lg text-white text-center'>
                 Testimonials
               </Link>
-              <Link href='#' className='block text-lg text-white text-center'>
+              <Link href='/contact-us' className='block text-lg text-white text-center'>
                 Contact Us
               </Link>
             </div>
