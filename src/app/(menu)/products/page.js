@@ -15,12 +15,7 @@ import {
   CoverMeja,
   DekorasiLengkap,
 } from '@/services/dataProduct/serve';
-
-const yesevaOne = Yeseva_One({
-  weight: ['400'],
-  style: ['normal'],
-  subsets: ['latin'],
-});
+import Header from '@/components/Header';
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
@@ -40,20 +35,8 @@ export default function Products() {
   };
 
   return (
-    <main className='relative'>
-      <Chat />
-      <header
-        className='h-60 relative bg-cover bg-center text-white'
-        style={{
-          backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.jpg')",
-        }}
-      >
-        <Navbar />
-        <div className='h-full flex justify-center items-center text-center' style={yesevaOne.style}>
-          <h3 className='text-3xl underline underline-offset-4'>Our Products</h3>
-        </div>
-      </header>
+    <>
+      <Header title='Our Products' />
       <section className='mx-auto px-5 my-10 block md:flex md:justify-center  gap-x-8' style={poppins.style}>
         <div className='w-full md:w-48 lg:w-56 xl:w-64 h-fit px-2 py-4 flex-col text-sm md:text-xs lg:text-sm bg-white drop-shadow-lg rounded-xl overflow-hidden'>
           <button
@@ -239,7 +222,6 @@ export default function Products() {
           )}
         </div>
       </section>
-      <Footer />
-    </main>
+    </>
   );
 }
