@@ -1,15 +1,6 @@
-import Chat from '@/components/Chat';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import { Bilbo_Swash_Caps, Poppins, Yeseva_One } from 'next/font/google';
+import { Poppins, Yeseva_One } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const bilboSwashCaps = Bilbo_Swash_Caps({
-  weight: ['400'],
-  style: ['normal'],
-  subsets: ['latin'],
-});
 
 const yesevaOne = Yeseva_One({
   weight: ['400'],
@@ -25,27 +16,7 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className='relative'>
-      <Chat />
-      <header
-        className='h-screen relative bg-cover bg-center text-white'
-        style={{
-          backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.jpg')",
-        }}
-      >
-        <Navbar />
-        <section className='h-screen px-8 flex justify-center items-center text-center'>
-          <div>
-            <h1 className='text-6xl md:text-6xl lg:text-7xl xl:text-8xl italic' style={bilboSwashCaps.style}>
-              Pt Saputra Tenda Sejahtera
-            </h1>
-            <p className='mt-6 text-sm md:text-base lg:text-xl' style={poppins.style}>
-              Konveksi pembuat perlengkapan kain untuk dekorasi tenda, hotel, dan kantor.
-            </p>
-          </div>
-        </section>
-      </header>
+    <>
       <section className='my-20 px-5 md:block lg:flex justify-center gap-x-11' style={poppins.style}>
         <div>
           <h3 className='text-3xl font-semibold text-[#576250]' style={yesevaOne.style}>
@@ -272,7 +243,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
-    </main>
+      {/* <Footer /> */}
+    </>
   );
 }
