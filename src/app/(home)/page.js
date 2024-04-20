@@ -18,24 +18,32 @@ export default function Home() {
   return (
     <>
       <section className='my-20 px-5 md:block lg:flex justify-center gap-x-11' style={poppins.style}>
-        <div>
+        <div className='text-center lg:text-start'>
           <h3 className='text-3xl font-semibold text-[#576250]' style={yesevaOne.style}>
             Best Seller
           </h3>
           <p className='text-[#B8C1B2]'>Our best selling products</p>
         </div>
-        <div className='flex flex-col md:flex-row gap-4 text-[#90998B]'>
-          <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
-            <Image src='/images/photography.png' height={223} width={210} alt='photography' className='rounded-lg' />
-            <p className='mt-4'>Rumbai Tenda</p>
-          </div>
-          <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
-            <Image src='/images/ceremony.png' height={223} width={210} alt='photography' className='rounded-lg' />
-            <p className='mt-4'>Plafon Datar</p>
-          </div>
-          <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
-            <Image src='/images/wedding-design.png' height={223} width={210} alt='photography' className='rounded-lg' />
-            <p className='mt-4'>Set Dekorasi</p>
+        <div className='mt-8 flex justify-center text-[#90998B]'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
+              <Image src='/images/photography.png' height={223} width={210} alt='photography' className='rounded-lg' />
+              <p className='mt-4'>Rumbai Tenda</p>
+            </div>
+            <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
+              <Image src='/images/ceremony.png' height={223} width={210} alt='photography' className='rounded-lg' />
+              <p className='mt-4'>Plafon Datar</p>
+            </div>
+            <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
+              <Image
+                src='/images/wedding-design.png'
+                height={223}
+                width={210}
+                alt='photography'
+                className='rounded-lg'
+              />
+              <p className='mt-4'>Set Dekorasi</p>
+            </div>
           </div>
         </div>
       </section>
