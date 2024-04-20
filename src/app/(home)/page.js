@@ -1,6 +1,5 @@
 import { Poppins, Yeseva_One } from 'next/font/google';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const yesevaOne = Yeseva_One({
   weight: ['400'],
@@ -25,7 +24,7 @@ export default function Home() {
           <p className='text-[#B8C1B2]'>Our best selling products</p>
         </div>
         <div className='mt-8 flex justify-center text-[#90998B]'>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+          <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
             <div className='card w-fit p-3 bg-white text-center drop-shadow-lg rounded-lg'>
               <Image src='/images/photography.png' height={223} width={210} alt='photography' className='rounded-lg' />
               <p className='mt-4'>Rumbai Tenda</p>
@@ -54,7 +53,7 @@ export default function Home() {
           </h3>
           <p className='text-[#B8C1B2]'>Our Category Products</p>
         </div>
-        <div className='mt-6 w-fit px-5 container mx-auto grid md:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center'>
+        <div className='mt-6 w-fit px-5 container mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center'>
           <div className='card-category relative '>
             <Image
               src='/images/category.png'
