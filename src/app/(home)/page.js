@@ -195,9 +195,8 @@ export default function Home() {
                   fill='#0C0C0C'
                 />
               </svg>
-
-              <p className='mt-3 text-base font-bold'>Call Us</p>
-              <p className='mt-3 text-xs'>We&apos;re Here To Talk To You</p>
+              <p className='mt-3 text-base font-bold'>Hubungi Kami</p>
+              <p className='mt-3 text-xs'>Kami Di Sini Untuk Berbicara Dengan Anda</p>
             </div>
             <button className='w-full mt-3 p-2 text-center border-2 border-[#5A6D57] text-[#5A6D57] text-sm hover:bg-[#5A6D57] hover:text-white hover:transition-all'>
               +62 87774026818
@@ -218,9 +217,8 @@ export default function Home() {
                   fill='#0C0C0C'
                 />
               </svg>
-
-              <p className='mt-3 text-base font-bold'>Email Us</p>
-              <p className='mt-3 text-xs'>You are welcome to send us an email</p>
+              <p className='mt-3 text-base font-bold'>Email</p>
+              <p className='mt-3 text-xs'>Silakan kirim email kepada kami</p>
             </div>
             <button className='w-full mt-3 p-2 text-center border-2 border-[#5A6D57] text-[#5A6D57] text-sm hover:bg-[#5A6D57] hover:text-white hover:transition-all'>
               Send Email
@@ -241,8 +239,8 @@ export default function Home() {
                   fill='#0C0C0C'
                 />
               </svg>
-              <p className='mt-3 text-base font-bold'>Call Us</p>
-              <p className='mt-3 text-xs'>We&apos;re Here To Talk To You</p>
+              <p className='mt-3 text-base font-bold'>Jam Kerja</p>
+              <p className='mt-3 text-xs'>Kami siap membantu anda</p>
             </div>
             <button className='w-full mt-3 p-2 text-center border-2 border-[#5A6D57] text-[#5A6D57] text-sm hover:bg-[#5A6D57] hover:text-white hover:transition-all'>
               +62 87774026818
