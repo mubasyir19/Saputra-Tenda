@@ -1,18 +1,22 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-export default function CardProduct({ productImage, productName, productPrice }) {
+export default function CardProduct({
+  productImage,
+  productName,
+  productPrice,
+}) {
   return (
-    <div className='card-product w-full h-fit md:w-36 lg:w-40 xl:w-56 flex flex-col bg-white drop-shadow-lg rounded-lg'>
+    <div className="card-product flex h-fit w-full flex-col rounded-lg bg-white drop-shadow-lg md:w-36 lg:w-40 xl:w-56">
       <Image
         src={`/images/${productImage}.png`}
         height={130}
         width={130}
-        alt='product'
-        className='w-full h-fit object-cover'
+        alt="product"
+        className="h-fit w-full object-cover"
       />
-      <div className='p-2'>
-        <p className='text-xs h-14'>{productName}</p>
-        <p className='mt-1 font-bold md:text-xs lg:text-sm'>{productPrice}</p>
+      <div className="p-2">
+        <p className="h-14 text-xs">{productName}</p>
+        <p className="mt-1 font-bold md:text-xs lg:text-sm">{productPrice}</p>
       </div>
     </div>
   );

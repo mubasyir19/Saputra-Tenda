@@ -1,25 +1,28 @@
-import React from 'react';
-import Navbar from './Navbar';
-import { Yeseva_One } from 'next/font/google';
+import React from "react";
+import Navbar from "./Navbar";
+import { Yeseva_One } from "next/font/google";
 
 const yesevaOne = Yeseva_One({
-  weight: ['400'],
-  style: ['normal'],
-  subsets: ['latin'],
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
 });
 
 export default function Header({ title }) {
   return (
     <header
-      className='h-60 relative bg-cover bg-center text-white'
+      className="relative h-60 bg-cover bg-center text-white"
       style={{
         backgroundImage:
           "linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.jpg')",
       }}
     >
       <Navbar />
-      <div className='h-full flex justify-center items-center text-center' style={yesevaOne.style}>
-        <h3 className='text-3xl underline underline-offset-4'>{title}</h3>
+      <div
+        className="flex h-full items-center justify-center text-center"
+        style={yesevaOne.style}
+      >
+        <h3 className="text-3xl underline underline-offset-4">{title}</h3>
       </div>
     </header>
   );
