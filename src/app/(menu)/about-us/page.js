@@ -12,7 +12,7 @@ const yesevaOne = Yeseva_One({
 export default function ContactUs() {
   return (
     <>
-      <Header title='Contact Us' />
+      <Header title='About Us' />
       <main className='px-5 md:px-16 lg:px-20 xl:px-28'>
         <section className='my-12 grid grid-cols-2 gap-x-12'>
           <Image src='/images/background.jpg' height={1000} width={500} alt='photo-profile' className='w-full' />

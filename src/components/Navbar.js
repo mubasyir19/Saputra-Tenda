@@ -64,12 +64,12 @@ export default function Navbar() {
           Testimonials
         </Link>
         <Link
-          href='/contact-us'
+          href='/about-us'
           className={`hover:text-[#B8C1B2] hover:transition-all ${
             pathname === '/contact-us' ? 'text-[#B8C1B2] underline underline-offset-4' : 'text-white'
           }`}
         >
-          Contact Us
+          About Us
         </Link>
       </div>
       <div className='w-full flex justify-between md:hidden'>
@@ -106,8 +106,8 @@ export default function Navbar() {
               <Link href='/testimonials' className='block text-lg text-white text-center'>
                 Testimonials
               </Link>
-              <Link href='/contact-us' className='block text-lg text-white text-center'>
-                Contact Us
+              <Link href='/about-us' className='block text-lg text-white text-center'>
+                About Us
               </Link>
             </div>
           </div>
