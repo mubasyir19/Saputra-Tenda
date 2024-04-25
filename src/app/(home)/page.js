@@ -179,7 +179,10 @@ export default function Home() {
             referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
         </div>
-        <div className='w-full px-5 container mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div
+          className='w-full px-5 container mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-6'
+          style={poppins.style}
+        >
           <div className='card-contact w-full p-4 bg-[#F0F2EF]'>
             <div className='text-center text-black'>
               <svg
@@ -243,7 +246,7 @@ export default function Home() {
               <p className='mt-3 text-xs'>Kami siap membantu anda</p>
             </div>
             <button className='w-full mt-3 p-2 text-center border-2 border-[#5A6D57] text-[#5A6D57] text-sm hover:bg-[#5A6D57] hover:text-white hover:transition-all'>
-              +62 87774026818
+              09.00 - 21.00 WIB
             </button>
           </div>
         </div>
