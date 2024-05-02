@@ -1,7 +1,10 @@
+"use client";
+
 import Header from "@/components/Header";
 import { Yeseva_One } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import CountUp from "react-countup";
 
 const yesevaOne = Yeseva_One({
   weight: ["400"],
@@ -78,19 +81,27 @@ export default function ContactUs() {
           </div>
           <div className="mx-auto mt-8 grid w-3/4 grid-cols-2 gap-3 md:mt-0">
             <div className="place-content-center text-center">
-              <h4 className="text-3xl font-semibold">20+</h4>
+              <h4 className="text-3xl font-semibold">
+                <CountUp start={0} end={20} duration={5} />+
+              </h4>
               <p className="text-sm">Year of Experience</p>
             </div>
             <div className="place-content-center text-center">
-              <h4 className="text-3xl font-semibold">1000+</h4>
+              <h4 className="text-3xl font-semibold">
+                <CountUp start={0} end={1000} duration={5} />+
+              </h4>
               <p className="text-sm">Project Done</p>
             </div>
             <div className="place-content-center text-center">
-              <h4 className="text-3xl font-semibold">300+</h4>
+              <h4 className="text-3xl font-semibold">
+                <CountUp start={0} end={300} duration={5} />+
+              </h4>
               <p className="text-sm">Clients</p>
             </div>
             <div className="place-content-center text-center">
-              <h4 className="text-3xl font-semibold">500+</h4>
+              <h4 className="text-3xl font-semibold">
+                <CountUp start={0} end={500} duration={5} />+
+              </h4>
               <p className="text-sm">Products</p>
             </div>
           </div>
