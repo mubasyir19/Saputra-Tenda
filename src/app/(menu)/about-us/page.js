@@ -14,23 +14,25 @@ export default function ContactUs() {
     <>
       <Header title="About Us" />
       <main className="px-5 md:px-16 lg:px-20 xl:px-28">
-        <section className="my-12 grid grid-cols-2 gap-x-12">
+        <section className="my-12 gap-x-12 md:grid md:grid-cols-2">
           <Image
             src="/images/background.jpg"
             height={1000}
             width={500}
             alt="photo-profile"
-            className="w-full"
+            className="hidden w-full object-cover md:block md:h-full md:w-full"
           />
           <div className="my-auto">
-            <p className="text-lg font-semibold text-[#B8C1B2]">About Us</p>
+            <p className="text-sm font-semibold text-[#B8C1B2] lg:text-base xl:text-lg">
+              About Us
+            </p>
             <h2
-              className="mt-3 text-5xl font-semibold text-[#576250]"
+              className="mt-3 text-3xl font-semibold text-[#576250]  xl:text-5xl"
               style={yesevaOne.style}
             >
               We Always Make <br /> The Best
             </h2>
-            <p className="mb-4 mt-3 text-justify">
+            <p className="mb-4 mt-3 text-justify text-sm lg:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
               justo sed nibh aliquam volutpat. Cras ultricies ante ut nulla
               commodo, vitae commodo ex cursus. Suspendisse potenti. Nam ac
@@ -41,14 +43,14 @@ export default function ContactUs() {
             <div className="mt-5">
               <Link
                 href="#"
-                className="rounded-full bg-[#576250] px-5 py-3 text-sm text-white"
+                className="rounded-full bg-[#576250] px-5 py-3 text-xs text-white md:text-sm"
               >
                 Contact Us
               </Link>
             </div>
           </div>
         </section>
-        <section className="my-20 grid grid-cols-2 gap-x-12">
+        <section className="my-20 gap-x-12 md:grid md:grid-cols-2">
           <div className="">
             <h4
               className="text-3xl font-semibold text-[#576250]"
@@ -58,43 +60,43 @@ export default function ContactUs() {
             </h4>
             <div className="mt-4">
               <div>
-                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-lg font-medium text-[#576250]">
+                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-sm font-medium text-[#576250] md:text-base xl:text-lg">
                   Rumbai Tenda
                 </p>
               </div>
               <div>
-                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-lg font-medium text-[#576250]">
+                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-sm font-medium text-[#576250] md:text-base xl:text-lg">
                   Plafon Datar
                 </p>
               </div>
               <div>
-                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-lg font-medium text-[#576250]">
+                <p className="my-2 rounded-lg bg-[#B8C1B2] px-4 py-2 text-sm font-medium text-[#576250] md:text-base xl:text-lg">
                   Set Dekorasi
                 </p>
               </div>
             </div>
           </div>
-          <div className="mx-auto grid w-3/4 grid-cols-2 gap-3">
+          <div className="mx-auto mt-8 grid w-3/4 grid-cols-2 gap-3 md:mt-0">
             <div className="place-content-center text-center">
               <h4 className="text-3xl font-semibold">20+</h4>
-              <p className="">Year of Experience</p>
+              <p className="text-sm">Year of Experience</p>
             </div>
             <div className="place-content-center text-center">
               <h4 className="text-3xl font-semibold">1000+</h4>
-              <p className="">Project Done</p>
+              <p className="text-sm">Project Done</p>
             </div>
             <div className="place-content-center text-center">
               <h4 className="text-3xl font-semibold">300+</h4>
-              <p className="">Clients</p>
+              <p className="text-sm">Clients</p>
             </div>
             <div className="place-content-center text-center">
               <h4 className="text-3xl font-semibold">500+</h4>
-              <p className="">Products</p>
+              <p className="text-sm">Products</p>
             </div>
           </div>
         </section>
-        <section className="grid grid-cols-2 gap-x-12">
-          <div className="mx-auto w-3/4 place-content-center">
+        <section className="grid grid-cols-1 gap-x-12 lg:grid-cols-2">
+          <div className="mx-auto w-full place-content-center md:flex md:gap-x-4 lg:block lg:w-3/4">
             <div className="card-contact mt-4 w-full bg-[#F0F2EF] p-4">
               <div className="text-center text-black">
                 <svg
@@ -164,7 +166,7 @@ export default function ContactUs() {
               </button>
             </div>
           </div>
-          <div>
+          <div className="mt-8 lg:mt-0">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6908676935172!2d106.9467042748299!3d-6.3042859936849105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69928569a1c79d%3A0x9eb3424e56a9e37f!2sSAPUTRA%20TENDA!5e0!3m2!1sid!2sid!4v1710692251259!5m2!1sid!2sid"
               className="h-full w-full place-content-center"
@@ -177,15 +179,18 @@ export default function ContactUs() {
         <section className="my-20">
           <div className="relative h-96 w-full rounded-xl bg-background bg-cover bg-center">
             <div className="flex h-full w-full items-center justify-center rounded-xl bg-black bg-opacity-50 text-center">
-              <div className="w-1/2 text-white">
-                <p className="text-lg font-medium">Contact Now</p>
-                <h2 className="text-5xl font-bold" style={yesevaOne.style}>
+              <div className="w-5/6 text-white lg:w-1/2">
+                <p className="text-sm font-medium xl:text-lg">Contact Now</p>
+                <h2
+                  className="text-3xl font-bold xl:text-5xl"
+                  style={yesevaOne.style}
+                >
                   We Are Always Ready To Take A Perfect Shot
                 </h2>
                 <div className="mt-8">
                   <Link
                     href="#"
-                    className="rounded-full bg-white px-5 py-3 text-sm text-black"
+                    className="rounded-full bg-white px-5 py-3 text-xs text-black md:text-sm"
                   >
                     Get Started
                   </Link>
