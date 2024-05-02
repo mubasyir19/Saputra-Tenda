@@ -19,7 +19,7 @@ export default function Testimonials() {
                 {/* <div className='h-8 w-8 rounded-full bg-gray-700 my-auto'></div> */}
                 <p className="my-auto text-sm">{item.account}</p>
               </div>
-              <div className="mt-3">
+              <div className="mt-3 text-sm lg:text-base">
                 <p>{item.comment}</p>
               </div>
             </div>
