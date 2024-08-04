@@ -1,3 +1,4 @@
+import SlideTestimoni from "@/components/SlideTestimoni";
 import { Poppins, Yeseva_One } from "next/font/google";
 import Image from "next/image";
 
@@ -173,43 +174,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        id="testimonials"
-        className="w-full bg-[#585B56] py-12"
-        style={poppins.style}
-      >
-        <div className="text-center text-white">
-          <h3 className="text-3xl font-semibold" style={yesevaOne.style}>
-            Testimonials
-          </h3>
-          <p className="text-[#B8C1B2]">from happy, delighted couples</p>
-        </div>
-        <div className="flex justify-center gap-x-4">
-          <p className="mt-8 text-9xl text-[#464C43]" style={yesevaOne.style}>
-            “
-          </p>
-          <p className="2 my-12 w-1/2 text-center text-base text-white">
-            Lorem ipsum sit ac suspendisse adipiscing eget aliquam fermentum
-            rutrum tempus aenean. Suspendisse nascetur vulputate viverra varius
-            eu ullamcorper. Cursus pellentesque erat eget eget ullamcorper id
-            in. Nullam scelerisque varius viverra augue quis. Laoreet eget
-            curabitur vitae sed at facilisis purus convallis imperdiet.
-            Penatibus auctor diam vivamus amet a vehicula ultrices. Volutpat
-            arcu in amet praesent nisl mattis etiam cras orci. Ut urna elementum
-            sapien orci lacus!
-          </p>
-          <p className="mt-8 text-9xl text-[#464C43]" style={yesevaOne.style}>
-            ”
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <div className="flex gap-x-4 text-white">
-            <div className="my-auto h-[2px] w-8 bg-white"></div>
-            <p className="my-auto text-lg ">Mahdy Mubasyir </p>
-            <div className="my-auto h-[2px] w-8 bg-white"></div>
-          </div>
-        </div>
-      </section>
+      <SlideTestimoni />
       <section className="py-20">
         <div className="flex justify-center">
           <iframe
