@@ -1,6 +1,5 @@
-import React from "react";
-import Navbar from "./Navbar";
 import { Yeseva_One } from "next/font/google";
+import Navbar from "./Navbar";
 
 const yesevaOne = Yeseva_One({
   weight: ["400"],

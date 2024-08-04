@@ -1,7 +1,6 @@
 import { Bilbo_Swash_Caps, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const bilboSwashCaps = Bilbo_Swash_Caps({
   weight: ["400"],

@@ -3,7 +3,7 @@
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],

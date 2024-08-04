@@ -1,7 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import { reviews } from "@/services/reviews/reviews";
 import Header from "@/components/Header";
+import { reviews } from "@/services/reviews/reviews";
+import Image from "next/image";
 
 export default function Testimonials() {
   return (

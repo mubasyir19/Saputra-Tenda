@@ -1,21 +1,18 @@
 "use client";
 
-import Chat from "@/components/Chat";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { Poppins, Yeseva_One } from "next/font/google";
-import React, { useState } from "react";
 import CardProduct from "@/components/CardProduct";
+import Header from "@/components/Header";
 import {
-  SarungKursi,
-  RumbaiTenda,
-  Plafon,
-  KainPelamin,
   BackgroundDinding,
   CoverMeja,
   DekorasiLengkap,
+  KainPelamin,
+  Plafon,
+  RumbaiTenda,
+  SarungKursi,
 } from "@/services/dataProduct/serve";
-import Header from "@/components/Header";
+import { Poppins } from "next/font/google";
+import { useState } from "react";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
