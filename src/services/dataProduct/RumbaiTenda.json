@@ -1,22 +1,30 @@
 [
   {
     "name": "Rumbai Tenda atau Poni Tenda atau Rombe - Rombe atau Ider - Ider",
-    "price": "Rp25.000"
+    "price": "Rp25.000",
+    "image": []
   },
   {
     "name": "Rumbai Tenda, Rumbai Pola atau Poni Tenda atau Renda Tenda",
-    "price": "Rp15.000"
+    "price": "Rp15.000",
+    "image": []
   },
   {
     "name": "Poni Tenda",
-    "price": "Rp28.000"
-  },
-  {
-    "name": "Poni Tenda",
-    "price": "Rp25.000"
+    "price": "Rp25.000",
+    "image": [
+      "/images/products/background dengan poni 1.jpg",
+      "/images/products/background dengan poni 2.jpg",
+      "/images/products/background dengan poni 3.jpg"
+    ]
   },
   {
     "name": "Rumbai Tenda",
-    "price": "Rp35.000"
+    "price": "Rp35.000",
+    "image": [
+      "/images/products/rumbai tenda abu putih.jpg",
+      "/images/products/rumbai tenda marun gold.jpg",
+      "/images/products/rumbai tenda ungu tua putih.jpg"
+    ]
   }
 ]

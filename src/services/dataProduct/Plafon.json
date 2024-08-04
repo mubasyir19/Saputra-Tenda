@@ -1,22 +1,30 @@
 [
   {
     "name": "jantung plafon tenda / hiasan tengah plafon tenda / hiasan plafon",
-    "price": "Rp450.000"
+    "price": "Rp450.000",
+    "image": []
   },
   {
     "name": "Dekorasi tenda pesta",
-    "price": "Rp4.200.000"
+    "price": "Rp4.200.000",
+    "image": []
   },
   {
     "name": "Plafon Datar Bahan Satin peles untuk tenda dekorasi",
-    "price": "Rp20.000"
+    "price": "Rp20.000",
+    "image": [
+      "/images/products/Plafon datar 2.jpg",
+      "/images/products/Plafon datar 3.jpg"
+    ]
   },
   {
     "name": "Plafon Tenda",
-    "price": "Rp30.000"
+    "price": "Rp30.000",
+    "image": []
   },
   {
     "name": "Plafon Dekor",
-    "price": "Rp30.000"
+    "price": "Rp30.000",
+    "image": []
   }
 ]

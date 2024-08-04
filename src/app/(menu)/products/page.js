@@ -146,7 +146,7 @@ export default function Products() {
               {loopData(SarungKursi, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -154,7 +154,7 @@ export default function Products() {
               {loopData(RumbaiTenda, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -162,7 +162,7 @@ export default function Products() {
               {loopData(Plafon, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -170,7 +170,7 @@ export default function Products() {
               {loopData(CoverMeja, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -182,7 +182,7 @@ export default function Products() {
               {loopData(SarungKursi, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -194,7 +194,7 @@ export default function Products() {
               {loopData(RumbaiTenda, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -206,7 +206,7 @@ export default function Products() {
               {loopData(Plafon, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -218,7 +218,7 @@ export default function Products() {
               {loopData(CoverMeja, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -230,7 +230,7 @@ export default function Products() {
               {loopData(KainPelamin, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -241,7 +241,7 @@ export default function Products() {
             <>
               {loopData(BackgroundDinding, (item, key) => (
                 <CardProduct
-                  productImage={"photography"}
+                  productImage={item.image}
                   key={key}
                   productName={item.name}
                   productPrice={item.price}
@@ -253,7 +253,7 @@ export default function Products() {
             <>
               {loopData(DekorasiLengkap, (item, key) => (
                 <CardProduct
-                  productImage={"photography"}
+                  productImage={item.image}
                   key={key}
                   productName={item.name}
                   productPrice={item.price}
@@ -266,7 +266,7 @@ export default function Products() {
               {loopData(TerpalTenda, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />
@@ -278,7 +278,7 @@ export default function Products() {
               {loopData(KainLotto, (item, key) => (
                 <CardProduct
                   key={key}
-                  productImage={"photography"}
+                  productImage={item.image}
                   productName={item.name}
                   productPrice={item.price}
                 />

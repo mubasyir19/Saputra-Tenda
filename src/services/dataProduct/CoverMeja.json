@@ -1,42 +1,52 @@
 [
   {
     "name": "Jual Taplak Meja makan( Bisa request ukuran)",
-    "price": "Rp110.000"
+    "price": "Rp110.000",
+    "image": []
   },
   {
     "name": "Skirting Meja atau penutup samping meja prasmanan model pakai poni",
-    "price": "Rp35.000"
+    "price": "Rp35.000",
+    "image": []
   },
   {
     "name": "Taplak Meja Model Ketat, Taplak Meja Press, Cover Meja Ketat",
-    "price": "Rp210.000"
+    "price": "Rp210.000",
+    "image": []
   },
   {
     "name": "table runner / runner meja / hiasan meja",
-    "price": "Rp50.000"
+    "price": "Rp50.000",
+    "image": []
   },
   {
     "name": "Runner meja bulat - Runner meja persegi",
-    "price": "Rp50.000"
+    "price": "Rp50.000",
+    "image": ["/images/products/taplak meja bulat warna tosca muda putih.jpg"]
   },
   {
     "name": "Cover meja / skirting table bahan lotto tebal",
-    "price": "Rp35.000"
+    "price": "Rp35.000",
+    "image": []
   },
   {
     "name": "Cover meja / skirting table bahan pelamin",
-    "price": "Rp25.000"
+    "price": "Rp25.000",
+    "image": []
   },
   {
     "name": "Cover meja ukuran 200 x 60",
-    "price": "Rp200.000"
+    "price": "Rp200.000",
+    "image": []
   },
   {
     "name": "Cover meja bahan gorden",
-    "price": "Rp350.000"
+    "price": "Rp350.000",
+    "image": []
   },
   {
     "name": "Cover meja ukuran pesanan",
-    "price": "Rp160.000"
+    "price": "Rp160.000",
+    "image": []
   }
 ]

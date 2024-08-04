@@ -1,14 +1,17 @@
 [
   {
     "name": "bahan poly",
-    "price": "Rp35.000"
+    "price": "Rp35.000",
+    "image": []
   },
   {
     "name": "Kain Dekorasi / Kain Pelamin / Kain Abutai /kain backdop / Kain Tenda",
-    "price": "Rp25.000"
+    "price": "Rp25.000",
+    "image": []
   },
   {
     "name": "Kain Pelamint Untuk Dekorasi Tenda",
-    "price": "Rp65.000"
+    "price": "Rp65.000",
+    "image": []
   }
 ]

@@ -1,18 +1,31 @@
 [
   {
     "name": "background dinding ukuran pesanan",
-    "price": "Rp250.000"
+    "price": "Rp250.000",
+    "image": ["/images/products/background putih polos.jpg"]
   },
   {
     "name": "Tirai Tiang Tenda",
-    "price": "Rp50.000"
+    "price": "Rp50.000",
+    "image": [
+      "/images/products/tirai tiang gold putih.jpg",
+      "/images/products/tirai tiang pink fanta.jpg",
+      "/images/products/tirai tiang ungu muda putih.jpg"
+    ]
   },
   {
     "name": "Background dinding / tenda tanpa poni",
-    "price": "Rp28.000"
+    "price": "Rp28.000",
+    "image": [
+      "/images/products/background putih polos.jpg",
+      "/images/products/background dengan poni 1.jpg",
+      "/images/products/background dengan poni 2.jpg",
+      "/images/products/background dengan poni 3.jpg"
+    ]
   },
   {
     "name": "background dinding / begron dinding",
-    "price": "Rp35.000"
+    "price": "Rp35.000",
+    "image": []
   }
 ]
